@@ -25,7 +25,7 @@ header p {
 }
 
 .hero {
-    min-height: 70vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -42,9 +42,32 @@ header p {
 }
 
 .hero p {
-    font-size: 19px;
-    max-width: 550px;
-    line-height: 1.6;
+    margin-left: auto;
+    margin-right: auto;
+}
+.artist-tagline {
+    font-size: 16px;
+important;
+font-weight: bold;
+letter-spacing: 1px;
+color: #8b6f5c;
+margin: 5px 0 15px;
+}
+
+.view-art-button {
+    display: inline-block;
+    background-color: #4a3b32;
+    color: white;
+    text-decoration: none;
+    padding: 13px 28px;
+    border-radius: 30px;
+    font-size: 16px;
+    margin-top: 15px;
+    transition: transform 0.3s ease;
+}
+
+.view-art-button:hover {
+    transform: scale(1.05);
 }
 
 button {
@@ -60,7 +83,6 @@ button {
 
 button:hover {
     transform: scale(1.05);
-}
 }
 .artwork {
     padding: 60px 30px;
