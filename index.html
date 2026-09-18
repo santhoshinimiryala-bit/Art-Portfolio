@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Santhoshini Art | Artist Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+    <a href="#home">Home</a>
+    <a href="#artwork">Artwork</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#project">Project</a>
+    <a href="#commissions">Commissions</a>
+    <a href="#contact">Contact</a>
+</nav>
+    <header id="home">
+        <h1>Santhoshini Art</h1>
+        <p>Portraits • Sketches • creative Art</p>
+    </header>
+
+    <section class="hero">
+        <section class="artwork" id="artwork">
+    <h2>My Artwork</h2>
+
+    <div class="art-grid">
+
+        <div class="art-card">
+           <img src="images/potrait.jpeg" alt="Portrait Drawing" class="art-image" onclick="openArtwork(this)"> 
+            <h3>Portrait Drawing</h3>
+            <p>Charcoal portrait</p>
+        </div>
+
+        <div class="art-card">
+            <img src="images/sketch.jpeg" alt="Sketch" class="art-image" onclick="openArtwork(this)">
+            <h3>Sketch</h3>
+            <p>Pencil artwork</p>
+        </div>
+
+        <div class="art-card">
+            <img src="images/creative drawing.jpeg" alt="Creative Drawing" class="art-image" onclick="openArtwork(this)">
+            <h3>Creative Drawing</h3>
+            <p>Original artwork</p>
+        </div>
+
+    </div>
+</section>
+        <h2>Where sketches become stories 🎨</h2>
+        <p>Artist • Portrait Sketches • Creative Soul</p>
+        <p>A little collection of portraits, sketches and pieces created with love for art.</p>
+
+        <a href="#artwork" class="view-art-button">View My Art</a>
+    </section>
+    <section class="about" id="about">
+    <h2>About Me</h2>
+
+    <p>
+        Hi! I'm an artist who loves creating portraits, sketches
+        and illustrations. This portfolio is a collection of my
+        artwork and creative journey.
+    </p>
+</section>
+<section class="project" id="project">
+    <h2>About This Project</h2>
+
+    <p>
+        This personal art portfolio website was created to showcase
+        my artwork, portrait commissions and creative journey.
+    </p>
+
+    <p>
+        Built using HTML, CSS and JavaScript, the website includes
+        an artwork gallery, commission form, responsive design and
+        interactive artwork viewing.
+    </p>
+</section>
+<section class="skills" id="skills">
+    <h2>Skills Used</h2>
+
+    <div class="skills-container">
+        <div class="skill-card">HTML</div>
+        <div class="skill-card">CSS</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">Responsive Design</div>
+    </div>
+</section>
+<section class="commissions" id="commissions">
+
+    <h2>Commissions</h2>
+
+    <p>
+        Want a custom artwork?
+        I create personalised portraits and drawings.
+    </p>
+
+    <div class="commission-box">
+
+        <h3>Portrait Commissions</h3>
+
+        <p>Custom artwork made specially for you.</p>
+
+        <p><strong>Single Person — ₹750</strong></p>
+        <p><strong>Two People — ₹950</strong></p>
+
+        <a href="#commission-form"
+        class="order-button">Place an Order</a>
+
+    </div>
+    </section>
+    <section class="commission-form" id="commission-form">
+
+    <h2>Commission Request</h2>
+
+    <p>Tell me a little about the artwork you'd like.</p>
+
+    <form>
+
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+
+        <label for="art-type">Artwork Type</label>
+        <select id="art-type" name="art-type">
+            <option value="">Select artwork type</option>
+            <option value="portrait">Portrait</option>
+            <option value="sketch">Sketch</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="people">Number of People</label>
+        <select id="people" name="people">
+            <option value="">Select</option>
+            <option value="one">1 Person</option>
+            <option value="two">2 People</option>
+            <option value="more">More than 2</option>
+        </select>
+
+        <label for="message">Tell me about your artwork</label>
+        <textarea id="message" name="message" rows="5"
+            placeholder="Describe what you'd like..."></textarea>
+
+        <button type="submit">Send Request</button>
+
+    </form>
+
+    <p id="success-message"></p>
+
+</section>
+
+</section>
+<section class="contact" id="contact">
+    <h2>Let's Connect</h2>
+
+    <p>
+        Interested in my artwork or want to discuss a custom drawing?
+        Feel free to reach out.
+    </p>
+
+    <a href="mailto:santhoshinimiryala@gmail.com" class="contact-button">
+        Email Me
+    </a>
+
+    <div class="social-links">
+        <a href="https://instagram.com/santhoshini.miryala" target="_blank">
+            Instagram
+        </a>
+
+        <a href="https://github.com/santhoshinimiryala-bit" target="_blank">
+            GitHub
+        </a>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 My Art Portfolio</p>
+    <p>Made with 🎨 and creativity</p>
+</footer>
+
+<div id="image-viewer" class="image-viewer">
+
+    <span class="close-viewer" onclick="closeArtwork()">&times;</span>
+
+    <img id="large-artwork" src="" alt="Large artwork">
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

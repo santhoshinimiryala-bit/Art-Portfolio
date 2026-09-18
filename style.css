@@ -1,0 +1,439 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    background-color: #f8f3ed;
+    font-family: Arial, sans-serif;
+    color: #4a3b32;
+}
+
+header {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.hero {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #f8f3ed, #eee3d7);
+}
+
+.hero h2 {
+    font-size: 48px;
+    max-width: 700px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 19px;
+    max-width: 550px;
+    line-height: 1.6;
+}
+
+button {
+    background-color: #4a3b32;
+    color: white;
+    border: none;
+    padding: 13px 28px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+}
+.artwork {
+    padding: 60px 30px;
+    text-align: center;
+}
+
+.artwork h2 {
+    font-size: 32px;
+    margin: 0 auto 35px auto;
+    text-align: center;
+}
+
+.art-grid {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.art-card {
+    width: 250px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.art-card:hover {
+    transform: translateY(-8px);
+}
+
+.art-placeholder {
+    height: 250px;
+    background-color: #e8ddd2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.art-card h3 {
+    margin-bottom: 5px;
+}
+
+.art-card p {
+    margin-top: 0;
+}
+.art-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.about {
+    padding: 70px 30px;
+    text-align: center;
+    max-width: 700px;
+    margin: auto;
+}
+
+.about h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+.commissions {
+    padding: 70px 30px;
+    text-align: center;
+}
+
+.commissions h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.commissions > p {
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+.commission-box {
+    max-width: 400px;
+    margin: auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.commission-box h3 {
+    font-size: 24px;
+}
+
+.commission-box p {
+    line-height: 1.6;
+}
+.contact {
+    padding: 70px 30px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.contact p {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #4a3b32;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 18px 20px;
+    background-color: rgba(255, 255, 255, 0.95);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(74, 59, 50, 0.08);
+}
+
+nav a {
+    text-decoration: none;
+    color: #4a3b32;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #8b6f5c;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+.view-art-button {
+    display: inline-block;
+    background-color: #4a3b32;
+    color: white;
+    text-decoration: none;
+    padding: 13px 28px;
+    border-radius: 30px;
+    font-size: 16px;
+    margin-top: 15px;
+    transition: transform 0.3s ease;
+}
+
+.view-art-button:hover {
+    transform: scale(1.05);
+}
+.commission-form {
+    padding: 70px 30px;
+    text-align: center;
+}
+
+.commission-form h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.commission-form > p {
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input,
+select,
+textarea {
+    padding: 12px;
+    border: 1px solid #d6c8bc;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+textarea {
+    resize: vertical;
+}
+
+form button {
+    margin-top: 15px;
+}
+#success-message {
+    margin-top: 25px;
+    font-size: 18px;
+    font-weight: bold;
+}
+@media (max-width: 600px) {
+
+    nav {
+        gap: 12px;
+        padding: 15px 10px;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .hero h2 {
+        font-size: 34px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .art-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .art-card {
+        width: 85%;
+        max-width: 300px;
+    }
+
+    .about,
+    .commissions,
+    .commission-form,
+    .contact {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+}
+section {
+    scroll-margin-top: 80px;
+}
+footer {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #4a3b32;
+    color: white;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px;
+    font-size: 14px;
+}
+.art-image {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.art-image:hover {
+    transform: scale(1.03);
+}
+
+.image-viewer {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.image-viewer img {
+    max-width: 85%;
+    max-height: 85%;
+    object-fit: contain;
+}
+
+.close-viewer {
+    position: absolute;
+    top: 25px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+.order-button {
+    display: inline-block;
+    background-color: #4a3b32;
+    color: white;
+    text-decoration: none;
+    padding: 13px 28px;
+    border-radius: 30px;
+    font-size: 16px;
+    margin-top: 15px;
+    transition: transform 0.3s ease;
+}
+
+.order-button:hover {
+    transform: scale(1.05);
+}
+.artist-tagline {
+    font-size: 16px !important;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #8b6f5c;
+    margin: 5px 0 15px;
+}
+.skills {
+    padding: 70px 30px;
+    text-align: center;
+}
+
+.skills h2 {
+    font-size: 32px;
+    margin-bottom: 35px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skill-card {
+    background-color: white;
+    padding: 18px 28px;
+    border-radius: 12px;
+    font-weight: bold;
+    color: #4a3b32;
+    box-shadow: 0 4px 12px rgba(74, 59, 50, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+}
+.project {
+    padding: 70px 30px;
+    text-align: center;
+    max-width: 750px;
+    margin: auto;
+}
+
+.project h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.project p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
