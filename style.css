@@ -83,6 +83,10 @@ button {
 
 button:hover {
     transform: scale(1.05);
+<button :hover>
+ …
+ <element class="art-image enlarged{
+    transform: scale(1.5);
 }
 .artwork {
     padding: 60px 30px;

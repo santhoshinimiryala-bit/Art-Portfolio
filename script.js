@@ -11,6 +11,10 @@ form.addEventListener("submit", function(event) {
 });
 function openArtwork(image) {
     const viewer = document.querySelector("#image-viewer");
+    image.forEach(function(image) {
+        image.addEventListener("click",function(){
+        
+    });
     const largeArtwork = document.querySelector("#large-artwork");
 
     largeArtwork.src = image.src;
